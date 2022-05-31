@@ -1,0 +1,64 @@
+.range-slider .irs--round .irs-bar {
+  background-color: #0070dc;
+  display: block;
+  height: 2px;
+}
+
+.range-slider .irs--round .irs-line {
+  height: 2px;
+}
+
+.range-slider .irs--round .irs-handle {
+  background-color: #0070dc;
+  border: none;
+}
+
+.range-slider .irs--round .irs-handle.state_hover,
+.range-slider .irs--round .irs-handle:hover {
+  background-color: #358cdd;
+  cursor: pointer;
+}
+
+.range-slider .irs--round .irs-handle {
+  width: 15px;
+  height: 15px;
+  top: 29px;
+}
+
+.range-slider .irs--round .irs-from,
+.range-slider .irs--round .irs-to,
+.range-slider .irs--round .irs-single {
+  display: none;
+  color: #666666;
+}
+
+.irs--round .irs-from:before,
+.irs--round .irs-to:before,
+.irs--round .irs-single:before,
+.irs--round .irs-min,
+.irs--round .irs-max {
+  display: none;
+}
+
+.price input {
+  background-color: transparent;
+  border: none;
+  width: 15%;
+  font-size: 15px;
+}
+
+a.filter {
+  display: block;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  background-color: #f2f3f5;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 13px;
+  padding-left: 18px;
+  padding-right: 18px;
+  color: #000;
+  border-radius: 5px;
+  height: 34px;
+}

@@ -1,0 +1,116 @@
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  zoom: 1;
+  transition: all 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
+}
+
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+.nav-toggle {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+ul.departments-menu {
+  min-width: 293px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  z-index: 5;
+  border: 1px solid #e5e8ec;
+  background-color: var(--background-color);
+}
+
+ul.departments-menu li.menu-item a {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: transparent;
+  height: 44px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+li.menu-item a .menu-icon {
+  margin-right: 15px;
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+}
+
+.departments-menu > li + li {
+  border-top: 1px solid #e5e8ec;
+}
+
+.departments-menu li.menu-item a .fas {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+li.menu-item.menu-item-has-children a::after {
+  position: absolute;
+  content: "\203a";
+  margin-left: auto;
+  right: 22px;
+  font-size: 20px;
+}
+
+li.menu-item-has-children:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.departments-menu .sub-menu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: calc(100% - 1px);
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #e5e8ec;
+  border-top: 0;
+  padding: 20px 0px;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
+}
+
+li.menu-item.menu-item-has-children > .sub-menu {
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto;
+}
+
+li.menu-item.menu-item-has-children .sub-menu-list a {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-link);
+  padding: 4px 30px;
+}
+
+li.menu-item.menu-item-has-children .sub-menu a:hover {
+  text-decoration: underline;
+}
+
+li.menu-item.menu-item-has-children .sub-menu a::after {
+  content: "";
+  position: absolute;
+}
+
+li.menu-item-has-children ul.sub-menu-item li.sub-menu-link a {
+  font-size: 13px;
+  color: var(--color-main-text);
+  font-weight: 500;
+  height: 34px;
+}

@@ -1,0 +1,108 @@
+.site-footer {
+  margin-top: 115px;
+}
+
+.site-footer .footer-row.dark {
+  color: #fff;
+}
+
+.site-footer .footer-newsletter {
+  background-color: #041e42;
+  background-image: url("../images/background-image/background-img-2.png");
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+}
+
+.site-footer .footer-newsletter {
+  padding: 60px 0;
+}
+.site-newsletter {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-newsletter .entry-title {
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.site-newsletter .entry-discription p {
+  color: #818ea0;
+  font-size: 14px;
+}
+
+.site-newsletter .entry-discription p strong {
+  color: #ffbd27;
+}
+
+.news-letter-form {
+  width: 42%;
+}
+
+.site-newsletter .news-letter-form .form-feilds {
+  display: flex;
+  max-width: 530px;
+  position: relative;
+}
+
+.site-newsletter .news-letter-form .form-feilds input {
+  height: 53px;
+  width: 100%;
+  padding: 0 20px;
+  border-radius: 6px 6px 6px 6px;
+  border: none;
+}
+
+.site-newsletter .news-letter-form .form-feilds input:focus {
+  outline: none;
+}
+
+.site-newsletter .news-letter-form .form-feilds button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 0 30px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 0 6px 6px 0;
+  color: #000;
+  background-color: var(--color-secondary);
+  border: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .site-newsletter .news-letter-form .form-feilds button {
+    padding: 0 14px;
+  }
+}
+
+@media screen and (min-width: 268px) and (max-width: 768px) {
+  .site-newsletter {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .news-letter-form {
+    width: 90%;
+    margin-top: 25px;
+  }
+  .site-newsletter .news-letter-form .form-feilds input {
+    height: 45px;
+  }
+}
+
+@media screen and (min-width: 268px) and (max-width: 567px) {
+  .news-letter-form {
+    width: 100%;
+  }
+
+  .site-newsletter .news-letter-form .form-feilds button {
+    padding: 0 15px;
+  }
+}

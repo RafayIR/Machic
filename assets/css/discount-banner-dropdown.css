@@ -1,0 +1,126 @@
+.discount-item-wrapper {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  will-change: opacity;
+  padding: 10px;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 6;
+  transition: 0.3s all;
+  background-color: var(--background-color);
+  border: 1px solid #e5e8ec;
+}
+
+.discount-products:hover .discount-item-wrapper {
+  opacity: 1;
+  visibility: visible;
+}
+
+.discount-products-header {
+  padding: 0 18px;
+}
+
+.discount-products-header h4 {
+  font-size: 17px;
+}
+
+.discount-products-header p {
+  font-size: 14px;
+  color: var(--color-text-light);
+  margin-bottom: 16px;
+}
+
+.products-col-6 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  max-width: 16.66%;
+  flex: 0 0 16.6666%;
+}
+
+.discount-item-wrapper .product:hover .product-title a {
+  color: var(--color-link);
+}
+
+.discount-item-wrapper .product .product-title a:hover {
+  text-decoration: underline;
+}
+
+.product .thumbnail-wrapper {
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.thumbnail-wrapper img {
+  max-width: 100%;
+}
+
+.content-wrapper {
+  padding: 0 15px;
+  padding-bottom: 15px;
+}
+
+.product .product-title {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.07px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.product .product-title a {
+  color: var(--color-main-text);
+}
+
+.product-rating {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.product-rating .star-rating span .fas {
+  font-size: 13px;
+  color: var(--color-rating);
+}
+
+.product-rating .count-rating {
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.product .price {
+  font-size: 21px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: flex-end;
+  color: var(--color-main-text);
+}
+
+.price ins {
+  color: var(--color-warning);
+  text-decoration: none;
+}
+
+.price del {
+  font-size: 70%;
+  color: var(--color-text-light);
+  margin-left: 6px;
+}
+
+.product .product-message {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.color-light {
+  color: var(--color-text-light);
+}
+
+.color-warning {
+  color: var(--color-warning);
+}

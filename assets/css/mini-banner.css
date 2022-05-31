@@ -1,0 +1,88 @@
+.col-3 {
+  width: 33.33%;
+}
+
+.mini-banner {
+  position: relative;
+}
+
+.mini-banner-content {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+}
+
+.mini-banner-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.mini-banner-content-wrapper .entry-title {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+}
+
+.mini-price-banner-content-price {
+  margin-top: auto;
+}
+
+.mini-price-banner-content-price p {
+  font-size: 13px;
+  opacity: 0.5;
+  margin-bottom: 10px;
+}
+
+.mini-price-banner-content-price .price {
+  color: var(--color-warning);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.mini-price-banner-content-price .price del {
+  font-size: 77%;
+}
+
+.mini-banner-img img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  box-shadow: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 475px) {
+  .mini-banner .row {
+    flex-wrap: wrap;
+  }
+
+  .mini-banner .col-3 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 476px) and (max-width: 767px) {
+  .mini-banner .row {
+    flex-wrap: wrap;
+  }
+  .mini-banner .col-3 {
+    width: 50%;
+  }
+
+  .mini-banner .col-3:nth-last-child(1) {
+    display: none;
+  }
+
+  .mini-banner-content {
+    padding: 10px;
+  }
+
+  .mini-banner .col-3 .elementor-column-gap {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,137 @@
+.before-shop {
+  margin-top: 30px;
+}
+
+.sidebar-left {
+  position: relative;
+  border-bottom: 1px solid var(--form-border-light);
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+.row.sidebar-left {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.content-col {
+  margin-left: auto;
+}
+
+.filter-wrapper {
+  display: flex;
+}
+
+.sorting-product {
+  position: relative;
+  display: flex;
+  margin-right: 25px;
+}
+
+.sorting-product strong {
+  color: #888;
+  font-weight: 400;
+  padding-right: 10px;
+}
+
+.sorting-product::after {
+  content: "";
+  width: 1px;
+  bottom: 0;
+  height: auto;
+  position: absolute;
+  background-color: var(--form-border-light);
+  top: 0;
+  right: 0;
+}
+
+.sorting-filter i.fas.fa-caret-down {
+  padding-left: 10px;
+  color: #888;
+}
+
+.sorting-filter {
+  padding-right: 15px;
+}
+
+.sorting-product span {
+  display: block;
+}
+
+.product-view-button a {
+  color: #000;
+  padding-right: 20px;
+}
+
+.product-view-button a i {
+  font-size: 16px;
+  font-weight: 100;
+}
+/*************Drop-Down*********/
+
+.sort-dropdown {
+  position: absolute;
+  z-index: 10;
+  top: 26px;
+  left: -10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 200px;
+  height: auto;
+  transition: 0.3s all;
+  box-shadow: 1px 0px 1px rgba(224, 229, 234, 0.4);
+}
+
+.sort-dropdown.items {
+  min-width: 50px;
+  left: 40px;
+}
+
+.sort-dropdown-list a {
+  color: #000;
+  font-size: 14px;
+  display: block;
+  padding: 10px 15px;
+}
+
+.sort-dropdown-list:hover a {
+  background-color: #0073aa;
+  color: #fff;
+  transition: 0.2s all;
+}
+
+.sorting-product:hover .sort-dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 678px) {
+  .sorting-product.mobile-invisible {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .product-view-button {
+    display: none;
+  }
+
+  .sorting-product {
+    margin-right: 0;
+  }
+
+  .sorting-product::after {
+    display: none;
+  }
+
+  .sorting-filter {
+    padding-right: 0;
+  }
+
+  .sort-dropdown {
+    left: -95px;
+  }
+}

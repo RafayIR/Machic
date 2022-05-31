@@ -1,0 +1,81 @@
+.header-wrapper {
+  position: relative;
+}
+
+.shop-dropdown {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  will-change: opacity;
+  right: 0;
+  top: 100%;
+  padding: 20px;
+  z-index: 5;
+  background-color: var(--background-color);
+  transition: 0.3s all;
+  border: 1px solid #eef2f6;
+  box-shadow: 2px 2px 3px rgb(4 30 66 / 7%);
+  border-radius: 4px;
+}
+
+.shop-dropdwon-wrapper {
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.shop-row {
+  display: flex;
+}
+
+.shop-col {
+  width: 25%;
+}
+
+.shop-col ul li a {
+  padding: 0 0;
+}
+
+.shop-col ul.shop-menu li {
+  margin-bottom: 3px;
+}
+
+.menu li.navbar-link:nth-child(2) {
+  margin-top: 15px;
+}
+
+.menu li:nth-child(2):hover .shop-dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+.shop-col h3 {
+  color: var(--color-link);
+  font-size: 15px;
+  font-weight: 600;
+  padding: 5px 30px;
+  margin-bottom: 10px;
+}
+
+.shop-dropdwon-wrapper .shop-dropdown .shop-col:nth-last-child(4) h3 {
+  padding: 5px 10px;
+}
+
+.shop-dropdwon-wrapper
+  .shop-dropdown
+  .shop-col:nth-last-child(4)
+  ul.shop-menu
+  li
+  a {
+  padding: 7px 10px;
+  font-size: 14px;
+}
+
+.shop-col ul.shop-menu li a {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 7px 30px;
+}
+.shop-col ul.shop-menu {
+  padding-bottom: 20px;
+}

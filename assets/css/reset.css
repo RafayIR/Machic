@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "AktivGroteskCorp-regular";
+  src: url("../fonts/Aktiv_Grotesk/TTF/AktivGrotesk-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AktivGroteskCorp-regular";
+  src: url("../fonts/Aktiv_Grotesk/TTF/AktivGrotesk-Bold.ttf") format("ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AktivGroteskCorp-regular";
+  src: url("../fonts/Aktiv_Grotesk/TTF/AktivGrotesk-Regular.ttf") format("ttf");
+  font-weight: normal;
+}
+
+:root {
+  --color-main-text: #000000;
+  --color-link: #0070dc;
+  --color-primary: #041e42;
+  --color-secondary: #ffbd27;
+  --form-border: #ccc;
+  --form-border-light: #e0e5ea;
+  --background-color: #ffffff;
+  --color-warning: #ef262c;
+  --color-text-light: #818ea0;
+  --color-rating: #ffc21f;
+  --color-shop-button: #00a046;
+  --color-theme-border: #e5e8ec;
+  --color-theme-light: #f2f3f5;
+  --font-primary: "AktivGroteskCorp-regular", sans-serif;
+  --bs-gutter-x: 30px;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  color: var(--color-main-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-primary);
+}
+
+ul,
+li,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1290px;
+  margin: 0 auto;
+  padding-inline: 5px;
+}
+
+@media screen and (min-width: 310px) and (max-width: 1260px) {
+  .container,
+  .topnav,
+  .main-header {
+    width: 100%;
+  }
+  .container {
+    padding-inline: 16px;
+  }
+}

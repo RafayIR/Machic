@@ -1,0 +1,47 @@
+.brand-logos {
+  margin-top: 25px;
+}
+
+.col-6 {
+  max-width: 16.666%;
+  flex: 0 0 16.666%;
+}
+
+.brand-item {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.brand-item img {
+  max-width: 100%;
+  height: 60px;
+  opacity: 0.3;
+  transition: 0.3s all;
+}
+
+.brand-item img:hover {
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .logo-module .row {
+    flex-wrap: wrap;
+  }
+  .logo-module .col-6 {
+    max-width: 33.33%;
+    flex: 0 0 33.33%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .logo-module .row {
+    flex-wrap: wrap;
+  }
+
+  .logo-module .col-6 {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+}

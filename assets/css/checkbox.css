@@ -1,0 +1,51 @@
+.checkbox-list ul li a {
+  position: relative;
+}
+
+.checkbox-list input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #ccc;
+  height: 20px;
+  width: 18px;
+  background-color: #eee;
+}
+
+.checkbox-list ul li a:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checkbox-list ul li a input:checked ~ .checkmark {
+  background-color: #000;
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-list input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-list .checkmark:after {
+  left: 6px;
+  top: 1px;
+  width: 4px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}

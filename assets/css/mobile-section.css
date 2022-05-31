@@ -1,0 +1,91 @@
+.mobile-section-wrapper .col-33 {
+  margin-right: 15px;
+}
+
+.mobile-section-wrapper .banner-img {
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-section-wrapper .banner-img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  left: 0;
+  object-fit: cover;
+}
+
+.banner-img img {
+  max-width: 100%;
+}
+
+.mobile-section-wrapper .special-offer-product {
+  padding: 0;
+  border: none;
+}
+
+.mobile-section-wrapper .banner-content {
+  align-items: flex-start;
+  padding: 40px;
+}
+
+.mobile-section-wrapper .banner-content-wrapper {
+  width: 70%;
+}
+
+.mobile-section-wrapper .banner-content-wrapper .entry-subtitle.style-2 {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--color-link);
+  background-color: transparent;
+  padding: 0;
+}
+
+.mobile-section-wrapper .banner-content-wrapper .entry-title.thin {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.mobile-section-wrapper .entry-title.thin strong {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.mobile-section-wrapper .entry-description p {
+  font-size: 15px;
+}
+
+.mobile-section-wrapper .banner-content-wrapper .entry-button .btn {
+  font-size: 12px;
+  height: 32px;
+  padding: 10px 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .mobile .col-33 {
+    width: 40%;
+  }
+
+  .mobile .col-66 {
+    width: 60%;
+  }
+  .mobile-section-wrapper .banner-content-wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .col-33 {
+    display: none;
+  }
+  .col-66 {
+    width: 100%;
+  }
+
+  .mobile-section-wrapper .banner-content-wrapper {
+    width: 100%;
+  }
+}
